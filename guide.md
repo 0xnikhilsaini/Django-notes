@@ -66,4 +66,17 @@ CORS_ALLOW_CREDENTIALS = True
 - run - python manage.py runserver
 
 
+# setup with pipenv
+
+- $ mkdir notes && cd library
+- $ pipenv install django~=3.1.0
+- $ pipenv shell
+- (notes) $
+- (notes) $ django-admin startproject config .
+- (notes) $ python manage.py migrate
+- (notes) $ python manage.py runserver
+- (notes) $ python manage.py startapp notes_api
+
+
+
 
